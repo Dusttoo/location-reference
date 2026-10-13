@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 1,
+  "release": "2026-10-13",
+  "countryCode": "US",
+  "totals": {
+    "records": 186877,
+    "active": 176176,
+    "deprecated": 10701,
+    "merged": 0,
+    "censusPlaces": 32363,
+    "unmatchedGnisPopulatedPlaces": 154514,
+    "historicalGnisPopulatedPlaces": 10701,
+    "excludedGnisWithoutGeography": 5603,
+    "excludedDuplicateGnisRows": 1
+  },
+  "list": "lists/us-localities.txt",
+  "admin1": [
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "fips": "02",
+      "count": 1194,
+      "file": "data/us/admin1/AK.jsonl"
+    },
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "fips": "01",
+      "count": 6579,
+      "file": "data/us/admin1/AL.jsonl"
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "fips": "05",
+      "count": 4456,
+      "file": "data/us/admin1/AR.jsonl"
+    },
+    {
+      "code": "AS",
+      "name": "American Samoa",
+      "fips": "60",
+      "count": 149,
+      "file": "data/us/admin1/AS.jsonl"
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "fips": "04",
+      "count": 1868,
+      "file": "data/us/admin1/AZ.jsonl"
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "fips": "06",
+      "count": 6867,
+      "file": "data/us/admin1/CA.jsonl"
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "fips": "08",
+      "count": 1932,
+      "file": "data/us/admin1/CO.jsonl"
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "fips": "09",
+      "count": 1123,
+      "file": "data/us/admin1/CT.jsonl"
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "fips": "11",
+      "count": 176,
+      "file": "data/us/admin1/DC.jsonl"
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "fips": "10",
+      "count": 1661,
+      "file": "data/us/admin1/DE.jsonl"
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "fips": "12",
+      "count": 7174,
+      "file": "data/us/admin1/FL.jsonl"
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "fips": "13",
+      "count": 7445,
+      "file": "data/us/admin1/GA.jsonl"
+    },
+    {
+      "code": "GU",
+      "name": "Guam",
+      "fips": "66",
+      "count": 143,
+      "file": "data/us/admin1/GU.jsonl"
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "fips": "15",
+      "count": 591,
+      "file": "data/us/admin1/HI.jsonl"
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "fips": "19",
+      "count": 2342,
+      "file": "data/us/admin1/IA.jsonl"
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "fips": "16",
+      "count": 1332,
+      "file": "data/us/admin1/ID.jsonl"
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "fips": "17",
+      "count": 5021,
+      "file": "data/us/admin1/IL.jsonl"
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "fips": "18",
+      "count": 3690,
+      "file": "data/us/admin1/IN.jsonl"
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "fips": "20",
+      "count": 1693,
+      "file": "data/us/admin1/KS.jsonl"
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "fips": "21",
+      "count": 5827,
+      "file": "data/us/admin1/KY.jsonl"
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "fips": "22",
+      "count": 4131,
+      "file": "data/us/admin1/LA.jsonl"
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "fips": "25",
+      "count": 2318,
+      "file": "data/us/admin1/MA.jsonl"
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "fips": "24",
+      "count": 8668,
+      "file": "data/us/admin1/MD.jsonl"
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "fips": "23",
+      "count": 2139,
+      "file": "data/us/admin1/ME.jsonl"
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "fips": "26",
+      "count": 2985,
+      "file": "data/us/admin1/MI.jsonl"
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "fips": "27",
+      "count": 2270,
+      "file": "data/us/admin1/MN.jsonl"
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "fips": "29",
+      "count": 4543,
+      "file": "data/us/admin1/MO.jsonl"
+    },
+    {
+      "code": "MP",
+      "name": "Commonwealth of the Northern Mariana Islands",
+      "fips": "69",
+      "count": 37,
+      "file": "data/us/admin1/MP.jsonl"
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "fips": "28",
+      "count": 3546,
+      "file": "data/us/admin1/MS.jsonl"
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "fips": "30",
+      "count": 1907,
+      "file": "data/us/admin1/MT.jsonl"
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "fips": "37",
+      "count": 6922,
+      "file": "data/us/admin1/NC.jsonl"
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "fips": "38",
+      "count": 915,
+      "file": "data/us/admin1/ND.jsonl"
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "fips": "31",
+      "count": 1139,
+      "file": "data/us/admin1/NE.jsonl"
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "fips": "33",
+      "count": 991,
+      "file": "data/us/admin1/NH.jsonl"
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "fips": "34",
+      "count": 2660,
+      "file": "data/us/admin1/NJ.jsonl"
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "fips": "35",
+      "count": 1672,
+      "file": "data/us/admin1/NM.jsonl"
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "fips": "32",
+      "count": 1127,
+      "file": "data/us/admin1/NV.jsonl"
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "fips": "36",
+      "count": 6790,
+      "file": "data/us/admin1/NY.jsonl"
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "fips": "39",
+      "count": 7084,
+      "file": "data/us/admin1/OH.jsonl"
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "fips": "40",
+      "count": 1985,
+      "file": "data/us/admin1/OK.jsonl"
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "fips": "41",
+      "count": 1600,
+      "file": "data/us/admin1/OR.jsonl"
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "fips": "42",
+      "count": 10793,
+      "file": "data/us/admin1/PA.jsonl"
+    },
+    {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "fips": "72",
+      "count": 2310,
+      "file": "data/us/admin1/PR.jsonl"
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "fips": "44",
+      "count": 414,
+      "file": "data/us/admin1/RI.jsonl"
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "fips": "45",
+      "count": 5081,
+      "file": "data/us/admin1/SC.jsonl"
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "fips": "46",
+      "count": 1078,
+      "file": "data/us/admin1/SD.jsonl"
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "fips": "47",
+      "count": 7230,
+      "file": "data/us/admin1/TN.jsonl"
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "fips": "48",
+      "count": 9515,
+      "file": "data/us/admin1/TX.jsonl"
+    },
+    {
+      "code": "UM",
+      "name": "U.S. Minor Outlying Islands",
+      "fips": "74",
+      "count": 3,
+      "file": "data/us/admin1/UM.jsonl"
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "fips": "49",
+      "count": 3598,
+      "file": "data/us/admin1/UT.jsonl"
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "fips": "51",
+      "count": 8894,
+      "file": "data/us/admin1/VA.jsonl"
+    },
+    {
+      "code": "VI",
+      "name": "United States Virgin Islands",
+      "fips": "78",
+      "count": 226,
+      "file": "data/us/admin1/VI.jsonl"
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "fips": "50",
+      "count": 902,
+      "file": "data/us/admin1/VT.jsonl"
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "fips": "53",
+      "count": 2753,
+      "file": "data/us/admin1/WA.jsonl"
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "fips": "55",
+      "count": 2553,
+      "file": "data/us/admin1/WI.jsonl"
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "fips": "54",
+      "count": 4237,
+      "file": "data/us/admin1/WV.jsonl"
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "fips": "56",
+      "count": 598,
+      "file": "data/us/admin1/WY.jsonl"
+    }
+  ]
+}

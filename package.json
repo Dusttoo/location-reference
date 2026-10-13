@@ -1,0 +1,21 @@
+{
+  "name": "location-reference",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Versioned canonical locality data reconciled from official geographic sources.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "download": "node scripts/download-sources.mjs",
+    "import:us": "node scripts/import-us.mjs",
+    "test": "npm run validate",
+    "validate": "node scripts/validate.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  }
+}

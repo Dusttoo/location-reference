@@ -1,0 +1,49 @@
+{
+  "release": "2026-10-13",
+  "sources": [
+    {
+      "id": "census-places-2026",
+      "organization": "U.S. Census Bureau",
+      "title": "2026 National Places Gazetteer",
+      "publishedAt": "2026-09-08",
+      "retrievedAt": "2026-10-13",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+      "file": "2026_Gaz_place_national.zip",
+      "sha256": "af678e2d990827c89ee39b98c82de6e90b693c7361ff0e559ae3076670dd2863",
+      "license": "public-domain"
+    },
+    {
+      "id": "gnis-populated-places-2026-09",
+      "organization": "U.S. Geological Survey",
+      "title": "GNIS National Populated Places",
+      "publishedAt": "2026-09-02",
+      "retrievedAt": "2026-10-13",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "file": "PopulatedPlaces_National_Text.zip",
+      "sha256": "919fac887628b8547ec1b24fae319522a9481a56909c3914d1e0a2b56783147c",
+      "license": "public-domain"
+    },
+    {
+      "id": "gnis-federal-codes-2026-09",
+      "organization": "U.S. Geological Survey",
+      "title": "GNIS National Federal Codes",
+      "publishedAt": "2026-09-02",
+      "retrievedAt": "2026-10-13",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/FederalCodes/FedCodes_National_Text.zip",
+      "file": "FedCodes_National_Text.zip",
+      "sha256": "9b370cfccf88ef511fac55f0d16d6dcba626fb4257fe0ffa5c17b5704e2a5dbd",
+      "license": "public-domain"
+    },
+    {
+      "id": "gnis-all-names-2026-09",
+      "organization": "U.S. Geological Survey",
+      "title": "GNIS National All Names",
+      "publishedAt": "2026-09-30",
+      "retrievedAt": "2026-10-13",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/AllNames_National_Text.zip",
+      "file": "AllNames_National_Text.zip",
+      "sha256": "a0daf05115eec3636353317fc4af81ce54f81b32eeda11cb5d9d6d2c5ef22c15",
+      "license": "public-domain"
+    }
+  ]
+}

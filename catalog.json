@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "release": "2026-10-13",
+  "updatedAt": "2026-10-13",
+  "countries": [
+    {
+      "code": "US",
+      "name": "United States",
+      "manifest": "data/us/manifest.json",
+      "localityCount": 186877,
+      "activeLocalityCount": 176176
+    }
+  ]
+}

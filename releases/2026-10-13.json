@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "release": "2026-10-13",
+  "sources": [
+    {
+      "id": "census-places-2026",
+      "organization": "U.S. Census Bureau",
+      "title": "2026 National Places Gazetteer",
+      "publishedAt": "2026-09-08",
+      "retrievedAt": "2026-10-13",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_place_national.zip",
+      "file": "2026_Gaz_place_national.zip",
+      "sha256": "af678e2d990827c89ee39b98c82de6e90b693c7361ff0e559ae3076670dd2863",
+      "license": "public-domain"
+    },
+    {
+      "id": "gnis-populated-places-2026-09",
+      "organization": "U.S. Geological Survey",
+      "title": "GNIS National Populated Places",
+      "publishedAt": "2026-09-02",
+      "retrievedAt": "2026-10-13",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/PopulatedPlaces_National_Text.zip",
+      "file": "PopulatedPlaces_National_Text.zip",
+      "sha256": "919fac887628b8547ec1b24fae319522a9481a56909c3914d1e0a2b56783147c",
+      "license": "public-domain"
+    },
+    {
+      "id": "gnis-federal-codes-2026-09",
+      "organization": "U.S. Geological Survey",
+      "title": "GNIS National Federal Codes",
+      "publishedAt": "2026-09-02",
+      "retrievedAt": "2026-10-13",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/FederalCodes/FedCodes_National_Text.zip",
+      "file": "FedCodes_National_Text.zip",
+      "sha256": "9b370cfccf88ef511fac55f0d16d6dcba626fb4257fe0ffa5c17b5704e2a5dbd",
+      "license": "public-domain"
+    },
+    {
+      "id": "gnis-all-names-2026-09",
+      "organization": "U.S. Geological Survey",
+      "title": "GNIS National All Names",
+      "publishedAt": "2026-09-30",
+      "retrievedAt": "2026-10-13",
+      "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/AllNames_National_Text.zip",
+      "file": "AllNames_National_Text.zip",
+      "sha256": "a0daf05115eec3636353317fc4af81ce54f81b32eeda11cb5d9d6d2c5ef22c15",
+      "license": "public-domain"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "catalog.json",
+      "sha256": "08173f2ad728c460e984caa5afc1534e8fb4a73943c1cba9395d309ff0cdde4c"
+    },
+    {
+      "file": "data/us/admin1/AK.jsonl",
+      "sha256": "254a1c719c94035f5cb5ca24355464b9b549716e74905bf818c166a0a9dca4b8"
+    },
+    {
+      "file": "data/us/admin1/AL.jsonl",
+      "sha256": "710bb2dac69e3ff674272110ab6ab8c7bd6986c021cf32b4b687be1089e852f7"
+    },
+    {
+      "file": "data/us/admin1/AR.jsonl",
+      "sha256": "007990239c3c1ce826e48a962ab95228bd920df3f38ff2104bc52eaf3b04416a"
+    },
+    {
+      "file": "data/us/admin1/AS.jsonl",
+      "sha256": "e6481e4ce09778242389b2ca13fb1fd4bd10eb216378cd36afe1d91f99fa8566"
+    },
+    {
+      "file": "data/us/admin1/AZ.jsonl",
+      "sha256": "fb856bdf011c7d25883747790b7a8989f4430f32a243e35a01dca314882f4e13"
+    },
+    {
+      "file": "data/us/admin1/CA.jsonl",
+      "sha256": "4b083b37e3e59820ef487a7ad5282dbb9a8181556be7f6684523068aba68a0ab"
+    },
+    {
+      "file": "data/us/admin1/CO.jsonl",
+      "sha256": "c95532fb3bace729083f63aefb60d34cddc30ad9449aa7bc421307dd34e99bac"
+    },
+    {
+      "file": "data/us/admin1/CT.jsonl",
+      "sha256": "399e258d2a60176306b92ec0233786a45ef213a0faae28ae11c2a9bc12aaa43c"
+    },
+    {
+      "file": "data/us/admin1/DC.jsonl",
+      "sha256": "2343d173503e8bce6f14ec9c4250e6534652dc48ea0451422591fac0c0e1cc9c"
+    },
+    {
+      "file": "data/us/admin1/DE.jsonl",
+      "sha256": "3e81d69f33d3274638cc713492960ed967357f77bf366c9497a6e4a8a2002d78"
+    },
+    {
+      "file": "data/us/admin1/FL.jsonl",
+      "sha256": "ba1d8d38f7f44ee1353d45e96f31fcea76dd5125d2f6e9c12e6f814d0364aa3d"
+    },
+    {
+      "file": "data/us/admin1/GA.jsonl",
+      "sha256": "e59f4185b69da1d49dc7206fff4e27f329238bf6d8ac3e79a8619eaa56df0fb4"
+    },
+    {
+      "file": "data/us/admin1/GU.jsonl",
+      "sha256": "dff9c1584f6699246425e1e0ba601be4a6b7aecba650556a5f22d3de77f7e0a8"
+    },
+    {
+      "file": "data/us/admin1/HI.jsonl",
+      "sha256": "629b8eff0f9a38e7f276b585d34c4ea817a70baf507cc75390b1f376c5ec34d7"
+    },
+    {
+      "file": "data/us/admin1/IA.jsonl",
+      "sha256": "e354e0da8d2ea4f000e3f7a0ab53ba604b0fd8f54f247ba70e657c6a1090b90c"
+    },
+    {
+      "file": "data/us/admin1/ID.jsonl",
+      "sha256": "cf4ff56e52c4c25ff57e94df7e7543ff1c6b67c9db290501b0de0d1f7794659e"
+    },
+    {
+      "file": "data/us/admin1/IL.jsonl",
+      "sha256": "a9cf52a5de7b9825fae01f7e923f499f1e418088384d29bdecd6776877a62be3"
+    },
+    {
+      "file": "data/us/admin1/IN.jsonl",
+      "sha256": "ee719a7b33896c8e5a0b26840588fa0059a4e523a7d33c86ff9bafbb9fc9fa3d"
+    },
+    {
+      "file": "data/us/admin1/KS.jsonl",
+      "sha256": "0dd19933811df7645ed18e78ebf28bc29c3597670f3b4908872538881bc72810"
+    },
+    {
+      "file": "data/us/admin1/KY.jsonl",
+      "sha256": "fad7b7067cd31c93636d013a6fcdbdfcfe8663128739e4e335fb842e03fe1b2d"
+    },
+    {
+      "file": "data/us/admin1/LA.jsonl",
+      "sha256": "2f22db1e4468a287900b6dc8b54116dc1b0bd6f2f17bbab6dd00702f72061b9b"
+    },
+    {
+      "file": "data/us/admin1/MA.jsonl",
+      "sha256": "350b596de220121fdbf23b3a32005d8ea09ae6fc034bf1bf08b6d7ecf70ec97d"
+    },
+    {
+      "file": "data/us/admin1/MD.jsonl",
+      "sha256": "2caf4cb9b505474f13a7b4fea8cb596979bab4727f6b4c93b14c2d95066ebdf4"
+    },
+    {
+      "file": "data/us/admin1/ME.jsonl",
+      "sha256": "351572680ee195ac9f813312d819bf29788069d54928949c42cc29c93c54ef26"
+    },
+    {
+      "file": "data/us/admin1/MI.jsonl",
+      "sha256": "a75fca92eb003a1d99d7b20421a5227ba1f7cc595e2256f7c9b44cdc7242980d"
+    },
+    {
+      "file": "data/us/admin1/MN.jsonl",
+      "sha256": "05d6689a6d3bafbef5b36594bf1fb2e201236af4923a42794ab6726da47ab270"
+    },
+    {
+      "file": "data/us/admin1/MO.jsonl",
+      "sha256": "28c1fe40e4be18cc092251e3a34ac29de06b1a6546f177a9eeac869b178255ad"
+    },
+    {
+      "file": "data/us/admin1/MP.jsonl",
+      "sha256": "b994513d1dc37fef263c267fe0417d8f613cf11628a64f02e204484c98410b69"
+    },
+    {
+      "file": "data/us/admin1/MS.jsonl",
+      "sha256": "09fda9475c8c8f9d23e1d0ddb018d0d1a277202af673081913e7eead404200ba"
+    },
+    {
+      "file": "data/us/admin1/MT.jsonl",
+      "sha256": "711780b4e17302019eb0ce19b30cbdec3badfe65e3095eb9b30d2df0fd0f3fbf"
+    },
+    {
+      "file": "data/us/admin1/NC.jsonl",
+      "sha256": "584397474d07774fe74c95be9bbca832b78dff3fdae9c54d1fabbd24a8100777"
+    },
+    {
+      "file": "data/us/admin1/ND.jsonl",
+      "sha256": "60a77c1e773510c9ebad9e6f3a17924bdf3143509ec7ee9d3e859bf76e9f5bd5"
+    },
+    {
+      "file": "data/us/admin1/NE.jsonl",
+      "sha256": "2aff5662bc9175c7230631b08cb29d45a9eb3587ad35d2903230cd5a18b8065b"
+    },
+    {
+      "file": "data/us/admin1/NH.jsonl",
+      "sha256": "064da106c3c7d812015203c0c9d59f21b5932d0679671ca2d2a1ca3510d5eac5"
+    },
+    {
+      "file": "data/us/admin1/NJ.jsonl",
+      "sha256": "7440856c3be690f4e9757a2d98a94638d59b7a8e4b5f29ee2825bf3dfde0a1a4"
+    },
+    {
+      "file": "data/us/admin1/NM.jsonl",
+      "sha256": "d0ebc36938d526747c5a0971ceac2f03980adfb41d1e89c2fe35d069fc4daf94"
+    },
+    {
+      "file": "data/us/admin1/NV.jsonl",
+      "sha256": "3bd39e61c0b93ca6f837d220853650bf7f48f5c97bb02cb4ae751faabcfdc776"
+    },
+    {
+      "file": "data/us/admin1/NY.jsonl",
+      "sha256": "c99366de9dfa50b7f3a32c0804a7d91907f0c4042737c2bdb1d455eae3589021"
+    },
+    {
+      "file": "data/us/admin1/OH.jsonl",
+      "sha256": "81719946d4598233e6dbb64f03f1a235a2e2bd6b63353f5ce8230e67f2f0872e"
+    },
+    {
+      "file": "data/us/admin1/OK.jsonl",
+      "sha256": "0d75e33bb61040076c0b6afc38a3874dab90eab2736d51d6b9c428e3a3c2a466"
+    },
+    {
+      "file": "data/us/admin1/OR.jsonl",
+      "sha256": "b84b0513599236f524159f034503bcbf54d955d264614fbfcc485356f857c575"
+    },
+    {
+      "file": "data/us/admin1/PA.jsonl",
+      "sha256": "3a562484534fb13384bb76d68d766f7ec3d85863978e4649345c0251b385f249"
+    },
+    {
+      "file": "data/us/admin1/PR.jsonl",
+      "sha256": "19144975848d7912117c06b4e9c27686616537994cefffb6c2cc885646a25447"
+    },
+    {
+      "file": "data/us/admin1/RI.jsonl",
+      "sha256": "272047722a3c9668f03df67c572736c63f9fc1e7f27f7141bfd0273b7615d729"
+    },
+    {
+      "file": "data/us/admin1/SC.jsonl",
+      "sha256": "6d6d1cd664700b97ef3bcdb28d9be9b35ec332d5d667ead0074f71a977186baa"
+    },
+    {
+      "file": "data/us/admin1/SD.jsonl",
+      "sha256": "8313756e369cf921f73dd816b11b18ce71d3b4f2a43719b7cae2e4f2b8562718"
+    },
+    {
+      "file": "data/us/admin1/TN.jsonl",
+      "sha256": "f8785f8a152c0943b9c5560b857e36f7a548acd49511cdd3147bd340a69c21cd"
+    },
+    {
+      "file": "data/us/admin1/TX.jsonl",
+      "sha256": "fa96e3d3b17f9ce2973265de5b99f9bd7b64d65d82e20618d0dd2f88ce402fa4"
+    },
+    {
+      "file": "data/us/admin1/UM.jsonl",
+      "sha256": "9bf32efd5ff9a49491f4f3a70ab20da2c6fde9e0cef590256966b22d111fde0e"
+    },
+    {
+      "file": "data/us/admin1/UT.jsonl",
+      "sha256": "3872b741f347ee414a555068ec9f89afacf372d9fe82a1515c3f3b8bb904ac38"
+    },
+    {
+      "file": "data/us/admin1/VA.jsonl",
+      "sha256": "291bf25b2a52e90ffae1d6fe3d21edba24326f1342e29b8ed37441ba7559a54d"
+    },
+    {
+      "file": "data/us/admin1/VI.jsonl",
+      "sha256": "f82a6919e64f3c86278d61bdb148e07a08ab86d273941e78e3f0954f208addff"
+    },
+    {
+      "file": "data/us/admin1/VT.jsonl",
+      "sha256": "f99ca352c15a19d9f85d446e20bce02e48345314ccc6526610a96c9f84af23e7"
+    },
+    {
+      "file": "data/us/admin1/WA.jsonl",
+      "sha256": "d880a76fa779d6af27ded33134a4eb0905b9ca61e5a618a7b3a5b51d40775333"
+    },
+    {
+      "file": "data/us/admin1/WI.jsonl",
+      "sha256": "2bf6da2e88511c71dd0d63fe9be2de33ae76c896dc29511d5e7b60787379a952"
+    },
+    {
+      "file": "data/us/admin1/WV.jsonl",
+      "sha256": "94b930f45b9eee64d07ce8f0f767954730776a18f7aec246ac8603d7133c6155"
+    },
+    {
+      "file": "data/us/admin1/WY.jsonl",
+      "sha256": "210090cdbf129575cf76e055e406928e1a61d43e580d2568e1863826b5b70f31"
+    },
+    {
+      "file": "data/us/manifest.json",
+      "sha256": "b94b125f2c7b5ec3e1ff828a850a5f4268a0b7885e74667918c2e630d272dcb9"
+    },
+    {
+      "file": "lists/us-localities.txt",
+      "sha256": "4bca850c4897051cbc907de5d63ad879770131bf25bf3c3fd734850770bb0504"
+    }
+  ]
+}
