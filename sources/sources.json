@@ -1,5 +1,5 @@
 {
-  "release": "2026-10-13",
+  "release": "2026-11-15",
   "sources": [
     {
       "id": "census-places-2026",
@@ -43,6 +43,17 @@
       "url": "https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/Topical/AllNames_National_Text.zip",
       "file": "AllNames_National_Text.zip",
       "sha256": "a0daf05115eec3636353317fc4af81ce54f81b32eeda11cb5d9d6d2c5ef22c15",
+      "license": "public-domain"
+    },
+    {
+      "id": "census-zcta-2026",
+      "organization": "U.S. Census Bureau",
+      "title": "2026 National ZIP Code Tabulation Areas Gazetteer",
+      "publishedAt": "2026-09-08",
+      "retrievedAt": "2026-11-15",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2026_Gazetteer/2026_Gaz_zcta_national.zip",
+      "file": "2026_Gaz_zcta_national.zip",
+      "sha256": "f1e9046b91f6e60686a99343cb2752834c02b0764939403b331c78c017e2c54c",
       "license": "public-domain"
     }
   ]

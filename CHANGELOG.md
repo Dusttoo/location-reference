@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-11-15
+
+### Added
+
+- Published 33,791 source-pinned 2026 Census ZCTAs as a separate ZIP-area search layer with representative points and a copy-friendly list.
+- Added ZCTA schema, importer, validation, release checksums and marketplace integration guidance.
+
+### Fixed
+
+- Preserve original locality retirement dates when rebuilding a later release from unchanged GNIS inputs.
+
 ## 2026-10-13
 
 ### Added

@@ -20,7 +20,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run download
-      - run: npm run import:us
+      - run: npm run download:zctas
+      - run: npm run import:us-zctas
       - run: npm test
       - run: git diff --exit-code

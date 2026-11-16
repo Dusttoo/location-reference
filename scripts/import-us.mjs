@@ -204,7 +204,7 @@ for await (const row of zipRows("PopulatedPlaces_National_Text.zip", "Text/*.txt
       ...(row.county_name && row.county_numeric ? { admin2: { name: row.county_name, fips: row.county_numeric } } : {}),
       kind: "gnis-populated-place",
       status: isHistorical ? "deprecated" : "active",
-      ...(isHistorical ? { deprecatedAt: release } : {}),
+      ...(isHistorical ? { deprecatedAt: previous?.deprecatedAt ?? release } : {}),
       searchTier: 3,
       coordinates: { latitude, longitude, source: "gnis" },
       sourceMappings: { gnis: [] }
@@ -242,7 +242,7 @@ for (const previous of previousRecords) {
   const replacement = sourceKeys(previous).map((key) => currentBySource.get(key)).find(Boolean);
   const retained = structuredClone(previous);
   retained.status = replacement ? "merged" : "deprecated";
-  retained.deprecatedAt = release;
+  retained.deprecatedAt = previous.deprecatedAt ?? release;
   if (replacement) retained.mergedInto = replacement;
   recordsById.set(retained.id, retained);
 }

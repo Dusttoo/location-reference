@@ -19,7 +19,8 @@
           "name": { "type": "string", "minLength": 1 },
           "manifest": { "type": "string", "minLength": 1 },
           "localityCount": { "type": "integer", "minimum": 0 },
-          "activeLocalityCount": { "type": "integer", "minimum": 0 }
+          "activeLocalityCount": { "type": "integer", "minimum": 0 },
+          "zctaCount": { "type": "integer", "minimum": 0 }
         },
         "additionalProperties": false
       }

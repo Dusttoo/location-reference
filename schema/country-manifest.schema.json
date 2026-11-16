@@ -25,6 +25,18 @@
       "additionalProperties": { "type": "integer", "minimum": 0 }
     },
     "list": { "type": "string", "minLength": 1 },
+    "zcta": {
+      "type": "object",
+      "required": ["file", "list", "count", "sourceId", "boundaryVintage"],
+      "properties": {
+        "file": { "const": "data/us/zctas.jsonl" },
+        "list": { "const": "lists/us-zctas.txt" },
+        "count": { "type": "integer", "minimum": 1 },
+        "sourceId": { "type": "string", "minLength": 1 },
+        "boundaryVintage": { "const": "2020" }
+      },
+      "additionalProperties": false
+    },
     "admin1": {
       "type": "array",
       "minItems": 1,

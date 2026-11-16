@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "release": "2026-10-13",
+  "release": "2026-11-15",
   "countryCode": "US",
   "totals": {
     "records": 186877,
@@ -414,5 +414,12 @@
       "count": 598,
       "file": "data/us/admin1/WY.jsonl"
     }
-  ]
+  ],
+  "zcta": {
+    "file": "data/us/zctas.jsonl",
+    "list": "lists/us-zctas.txt",
+    "count": 33791,
+    "sourceId": "census-zcta-2026",
+    "boundaryVintage": "2020"
+  }
 }

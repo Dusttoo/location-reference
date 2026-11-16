@@ -30,6 +30,7 @@ function assert(condition, message) {
 
 const schemaFiles = [
   "schema/locality.schema.json",
+  "schema/zcta.schema.json",
   "schema/catalog.schema.json",
   "schema/country-manifest.schema.json",
   "schema/source-manifest.schema.json",
@@ -163,4 +164,29 @@ assert(counts.active + counts.deprecated + counts.merged === counts.records, "St
 assert(catalog.countries[0].localityCount === counts.records && catalog.countries[0].activeLocalityCount === counts.active, "Catalog totals do not match records");
 assert(outputFiles.has("catalog.json") && outputFiles.has("data/us/manifest.json"), "Core manifests omitted from release");
 
-console.log(`Validated ${counts.records} localities, ${censusGeoids.size} Census GEOIDs, ${gnisFeatureIds.size} GNIS feature IDs, and ${release.outputs.length} output checksums.`);
+if (country.zcta) {
+  const zcta = country.zcta;
+  assert(sources.sources.some((source) => source.id === zcta.sourceId), `Unknown ZCTA source ${zcta.sourceId}`);
+  assert(outputFiles.has(zcta.file) && outputFiles.has(zcta.list), "ZCTA outputs omitted from release");
+  assert(catalog.countries[0].zctaCount === zcta.count, "Catalog ZCTA count does not match manifest");
+  const zctaValidator = ajv.getSchema("https://location-reference.local/schema/zcta.schema.json");
+  const zctaLines = readline.createInterface({ input: createReadStream(path.join(root, zcta.file)), crlfDelay: Infinity });
+  let count = 0;
+  let priorCode;
+  const list = ["zcta\tlatitude\tlongitude"];
+  for await (const line of zctaLines) {
+    if (!line) continue;
+    const record = JSON.parse(line);
+    if (!zctaValidator(record)) fail(`${zcta.file}:${count + 1}: ${ajv.errorsText(zctaValidator.errors)}`);
+    assert(record.id === `us:zcta:${record.code}`, `${record.code}: ZCTA ID mismatch`);
+    assert(record.sourceId === zcta.sourceId, `${record.code}: ZCTA source mismatch`);
+    assert(!priorCode || priorCode < record.code, `${record.code}: ZCTA codes not unique and sorted`);
+    priorCode = record.code;
+    list.push([record.code, record.coordinates.latitude, record.coordinates.longitude].join("\t"));
+    count += 1;
+  }
+  assert(count === zcta.count, `Expected ${zcta.count} ZCTAs, found ${count}`);
+  assert(await readFile(path.join(root, zcta.list), "utf8") === `${list.join("\n")}\n`, `${zcta.list} does not match records`);
+}
+
+console.log(`Validated ${counts.records} localities, ${country.zcta?.count ?? 0} ZCTAs, ${censusGeoids.size} Census GEOIDs, ${gnisFeatureIds.size} GNIS feature IDs, and ${release.outputs.length} output checksums.`);
