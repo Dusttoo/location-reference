@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://location-reference.local/schema/zcta.schema.json",
+  "title": "U.S. Census ZIP Code Tabulation Area",
+  "type": "object",
+  "required": ["id", "code", "coordinates", "sourceId"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^us:zcta:[0-9]{5}$" },
+    "code": { "type": "string", "pattern": "^[0-9]{5}$" },
+    "coordinates": {
+      "type": "object",
+      "required": ["latitude", "longitude", "kind"],
+      "properties": {
+        "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+        "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
+        "kind": { "const": "census-representative-point" }
+      },
+      "additionalProperties": false
+    },
+    "sourceId": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": false
+}

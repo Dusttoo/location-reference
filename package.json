@@ -7,7 +7,9 @@
   "type": "module",
   "scripts": {
     "download": "node scripts/download-sources.mjs",
+    "download:zctas": "node scripts/download-sources.mjs --source census-zcta-2026",
     "import:us": "node scripts/import-us.mjs",
+    "import:us-zctas": "node scripts/import-us-zctas.mjs",
     "test": "npm run validate",
     "validate": "node scripts/validate.mjs"
   },

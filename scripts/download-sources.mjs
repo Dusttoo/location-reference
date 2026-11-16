@@ -9,6 +9,12 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const manifest = JSON.parse(await readFile(path.join(root, "sources", "sources.json"), "utf8"));
 const outputDirectory = path.join(root, "sources", "downloads");
+const sourceId = process.argv[2] === "--source" ? process.argv[3] : undefined;
+if (process.argv.length > 2 && (!sourceId || process.argv.length !== 4)) {
+  throw new Error("Usage: node scripts/download-sources.mjs [--source source-id]");
+}
+const selectedSources = sourceId ? manifest.sources.filter((source) => source.id === sourceId) : manifest.sources;
+if (sourceId && selectedSources.length !== 1) throw new Error(`Unknown source id: ${sourceId}`);
 
 async function checksum(file) {
   const hash = createHash("sha256");
@@ -18,7 +24,7 @@ async function checksum(file) {
 
 await mkdir(outputDirectory, { recursive: true });
 
-for (const source of manifest.sources) {
+for (const source of selectedSources) {
   const destination = path.join(outputDirectory, source.file);
   const current = await checksum(destination).catch(() => null);
   if (current === source.sha256) {
